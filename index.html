@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Basür</title>
+</head>
+<body style="margin:0;height:100vh;display:flex;justify-content:center;align-items:center;font-size:80px;">
+  <div id="text"></div>
+
+  <script>
+    const letters = ["b","a","s","ü","r"];
+    let i = 0;
+    const el = document.getElementById("text");
+
+    const interval = setInterval(() => {
+      el.textContent += letters[i];
+      i++;
+      if (i === letters.length) clearInterval(interval);
+    }, 600);
+  </script>
+</body>
+</html>
